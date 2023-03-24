@@ -1,13 +1,13 @@
 // Inicializar Firebase
 const firebaseConfig = {
-  apiKey: "TU_API_KEY",
-  authDomain: "TU_AUTH_DOMAIN",
-  databaseURL: "TU_DATABASE_URL",
-  projectId: "TU_PROJECT_ID",
-  storageBucket: "TU_STORAGE_BUCKET",
-  messagingSenderId: "TU_MESSAGING_SENDER_ID",
-  appId: "TU_APP_ID",
-  measurementId: "TU_MEASUREMENT_ID"
+  apiKey: "AIzaSyCiZF3Sd0GUC_lLCdlCycOYIn8_dO5cefE",
+  authDomain: "mp-oss.firebaseapp.com",
+  databaseURL: "https://mp-oss-default-rtdb.firebaseio.com/",
+  projectId: "mp-oss",
+  storageBucket: "mp-oss.appspot.com",
+  messagingSenderId: "859474965357",
+  appId: "1:859474965357:web:4b00b672c5dfdd65c1e064",
+  measurementId: "G-NZZRJCDEMG"
 };
 firebase.initializeApp(firebaseConfig);
 
