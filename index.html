@@ -1,0 +1,97 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Reuniones y Épicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Organizador de Reuniones y Épicas</h1>
+    </header>
+
+    <section class="user-data">
+        <form id="user-data-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            
+            <label for="squad">Squad:</label>
+            <select id="squad" name="squad" required>
+                <option value="TBX">TBX</option>
+                <option value="CODI">CODI</option>
+                <option value="DTB">DTB</option>
+            </select>
+            
+            <label for="quarter">Q del año:</label>
+            <select id="quarter" name="quarter" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                </select>
+
+                <button type="submit">Guardar datos de usuario</button>
+            </form>
+            <button id="expand-user-data">Editar datos de usuario</button>
+        </section>
+        
+        <section class="epic-cards">
+            <!-- Aquí se mostrarán las tarjetas de épicas generadas dinámicamente -->
+        </section>
+        
+        <section class="add-epic">
+            <form id="add-epic-form">
+                <label for="epic-number">Número de épica:</label>
+                <input type="text" id="epic-number" name="epic-number" required>
+        
+                <label for="epic-name">Nombre de épica:</label>
+                <input type="text" id="epic-name" name="epic-name" required>
+        
+                <label for="dependent-squads">Squads con dependencias:</label>
+                <input type="text" id="dependent-squads" name="dependent-squads" required>
+        
+                <label for="start-date">Fecha de inicio:</label>
+                <input type="date" id="start-date" name="start-date" required>
+        
+                <label for="implementation-date">Fecha de implementación:</label>
+                <input type="date" id="implementation-date" name="implementation-date" required>
+        
+                <button type="submit">Agregar épica</button>
+            </form>
+        </section>
+        
+        <button id="view-table">Ver tabla</button>
+        
+        <section class="epic-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Número de épica</th>
+                        <th>Nombre de épica</th>
+                        <th>Squads con dependencias</th>
+                        <th>Fecha de inicio</th>
+                        <th>Fecha de implementación</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Q del año</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- Aquí se mostrarán las filas de la tabla generadas dinámicamente -->
+                        </tbody>
+                        </table>
+                        </section>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
+
+           

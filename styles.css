@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: normal;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 3rem 2rem;
+}
+
+.form-container {
+    background-color: #f5f5f5;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.user-data.collapsed form {
+    display: none;
+}
+
+.user-data.collapsed #expand-user-data {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #3498db;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.user-data.collapsed #expand-user-data:hover {
+    text-decoration: underline;
+}
+
+.epic-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.epic-card {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    flex-basis: calc(33.333% - 1.5rem);
+    position: relative;
+}
+
+.epic-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    background-color: #008080;
+    padding: 0.5rem;
+    border-radius: 5px 5px 0 0;
+}
+
+.epic-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #d9d9d9;
+}
+
+.delete-epic {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f00;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 0 0 0 5px;
+    }
+    
+    .delete-epic:hover {
+    background-color: #ff3333;
+    }
+    
+    .epic-table {
+    display: none;
+    }
+    
+    .epic-table table {
+    width: 100%;
+    border-collapse: collapse;
+    }
+    
+    .epic-table th,
+    .epic-table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+    }
+    
+    .epic-table th {
+    background-color: #008080;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: normal;
+    }
+    
+    .epic-table td {
+    background-color: #fff;
+    font-size: 1rem;
+    color: #333;
+    font-family: 'Roboto Mono', monospace;
+    }
+    
+    .epic-table tr:nth-child(odd) td {
+    background-color: #f5f5f5;
+    }
+    
+    /* Estilos para dispositivos móviles */
+    @media (max-width: 768px) {
+    .epic-card {
+    flex-basis: calc(50% - 1rem);
+    }
+    }
+    
+    /* Estilos para pantallas más pequeñas */
+    @media (max-width: 480px) {
+    .epic-card {
+    flex-basis: 100%;
+    }
+    }
+    
+    .epic-card .dependency-status input[type="checkbox"] {
+    display: none;
+    }
+    
+    .epic-card .dependency-status label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    }
+    
+    .epic-card .dependency-status input[type="checkbox"]:checked + label:before {
+    background-color: #00ff00;
+    border-color: #00ff00;
+    }
+    
+    .epic-card .dependency-status label {
+    font-weight: bold;
+    cursor: pointer;
+    color: #d9d9d9;
+    font-family: 'Roboto Mono', monospace;
+    }
+    
+    /* Nuevos estilos agregados */
+    body {
+    background-color: #111;
+    }
+    
+    header {
+    background-color: #000;
+    }
+    
+    .form-container {
+    background-color: #f5f5f5;
+    }
+    
+    label {
+    color: #d9d9d9;
+    }
+    
+    input[type="text"],
+    input[type="date"],
+    select {
+    background-color: #333;
+    color: #d9d9d9;
+    }
+    
+    button {
+    background-color: #3498db;
+    color: #fff;
+    }
+    
+    .user-data.collapsed #expand-user-data {
+    color: #3498db;
+    font-size: 1.2rem;
+    }
+    
+    .epic-card p {
+    color: #d9d9d9;
+    }
+    
+    .epic-table td {
+    color: #333;
+    }
+    
+    @media (max-width: 480px) {
+    .epic-card h3 {
+    font-size: 1.2rem;
+    }
+    }
